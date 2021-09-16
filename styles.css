@@ -1,0 +1,31 @@
+.main {
+    text-align: center;
+    color: brown;
+    padding: 3rem;
+}
+#show-btn {
+    background-color: brown;
+    text-align: center;
+    font-size: x-large ;
+    font-style:inherit;
+    font: optional;
+    font-weight:unset;
+    margin-top: 10%;
+    border-radius: 3rem;
+    
+}
+
+#bday-input {
+    background-color: pink ;
+    font-size: larger;
+    border-radius: 2rem;
+    padding-right: 0.5rem;
+    margin: 00.5rem;
+
+}
+
+#result {
+    font-weight: bold;
+    font-size:x-large;
+    padding-top: 3rem;
+}
