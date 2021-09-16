@@ -1,3 +1,13 @@
+const dateInput = document.querySelector("#bday-input")
+const showBtn = document.querySelector("#show-btn")
+const outPut = document.querySelector("#result ")
+
+
+
+showBtn.addEventListener("click" , clickHandler)
+
+
+
 function reverseStr(str) {
 
     var listOfChars = str.split('')
@@ -82,9 +92,9 @@ function checkPalindromeForAllDateFormats(date) {
     return check;
 }
 
-// code for dates-changes
+// code for dates-changes (getting new date )
 
-function nextDate(date) {
+function inputNextDate(date) {
     var day = date.day + 1;
     var month = date.month;
     var year = date.year;
@@ -146,16 +156,52 @@ function isLeapYear(year) {
 
 
 
+function getNextPalindromeDate(date) {
 
 
+    var ctr = 0 ;
+    var nxtDate = inputNextDate(date);
 
-var date = {
-    day: 31,
-    month: 12,
-    year: 2020,
+    while(1) {
+        ctr++  ;
+        var isPalindrome = checkPalindromeForAllDateFormats(nxtDate);
+        if (isPalindrome) {
+            break ; 
+        }
+        nxtDate = inputNextDate (nxtDate) 
+
+    
+    }
+
+    return [ctr , nxtDate]
+    
 }
 
 
+function clickHandler (e){
+    var bdayStr = dateInput.value ;
+
+    if(bdayStr !==""){
+        var listOfDate = bdayStr.split('-')
+        var date = {
+            day : Number(listOfDate[2]) ,
+            month : Number(listOfDate[1]) ,
+            year : Number(listOfDate[0])
+        }
+        var isPalindrome = checkPalindromeForAllDateFormats(date)
+
+        if (isPalindrome) {
+            outPut.innerText = 'wow! Your Birthday is a Palindrome !'
+        }
+        else {
+            var [ctr , nxtDate] = getNextPalindromeDate(date) 
+            outPut.innerText = `The next palindrome date is ${nxtDate.day}-${nxtDate.month}-${nxtDate.year},you missed it by ${ctr} days .`
+        }
+
+        // console.log(isPalindrome)
 
 
-console.log(nextDate(date));
+    }
+
+}
+
