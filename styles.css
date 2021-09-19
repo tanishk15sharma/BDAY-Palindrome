@@ -1,26 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten&display=swap');
+
+body {
+    border: solid ;
+    padding-top: 3.5rem;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-color: 
+    #FDF2F8;
+    
+}
 .main {
     text-align: center;
-    color: brown;
-    padding: 3rem;
+    color: #831843
+    ;
+    
+    
+    
 }
 #show-btn {
-    background-color: brown;
-    text-align: center;
-    font-size: x-large ;
+    background-color: #9D174D;
+    
+    font-size: large ;
     font-style:inherit;
     font: optional;
     font-weight:unset;
-    margin-top: 10%;
-    border-radius: 3rem;
+    margin-top: 6rem;
+    border-radius: 1rem;
+    color:wheat;
+    cursor: pointer;
+    
     
 }
 
 #bday-input {
     background-color: pink ;
-    font-size: larger;
-    border-radius: 2rem;
-    padding-right: 0.5rem;
-    margin: 00.5rem;
+    font-size:xx-large ;
+    margin-top: 4rem
+    ;
+    border-radius: 0.5rem;
+
+    
+
+    
 
 }
 
@@ -28,4 +49,15 @@
     font-weight: bold;
     font-size:x-large;
     padding-top: 3rem;
+}
+.heading {
+    font-family: 'Gluten', cursive;
+
+}
+
+.info {
+    text-align: center;
+    font-family:serif;
+    font-style: oblique;
+    
 }
