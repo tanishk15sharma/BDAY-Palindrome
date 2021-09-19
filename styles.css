@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Gluten&display=swap');
 
 body {
-    border: solid ;
+    border: dotted ;
     padding-top: 3.5rem;
     border-top-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
     background-color: 
     #FDF2F8;
+    border-color: #BE185D;
+    padding-bottom: 1rem;
     
 }
 .main {
@@ -24,10 +26,11 @@ body {
     font-style:inherit;
     font: optional;
     font-weight:unset;
-    margin-top: 6rem;
+    margin-top: 5.5rem;
     border-radius: 1rem;
     color:wheat;
     cursor: pointer;
+    margin-bottom: 2rem;
     
     
 }
